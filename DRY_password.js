@@ -1,5 +1,6 @@
 let args    =   process.argv.slice(2);
-let argArr  =   args.toString().split('')
+let argArr  =   args.toString().split('');
+let finalPW;
 
 function obfuscate(password) {
 
@@ -26,8 +27,10 @@ function obfuscate(password) {
    }
 
  }
- let finalPW = argArr.join('');
+
+ finalPW = argArr.join('');
  return finalPW;
+
 }
 
-obfuscate(process.argv.slice(2))
+console.log(obfuscate(process.argv.slice(2)));
