@@ -27,7 +27,6 @@ function obfuscate(password) {
 
  }
  let finalPW = argArr.join('');
- console.log(finalPW);
  return finalPW;
 }
 
